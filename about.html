@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Learn Bright</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="favicon-about.ico" type="image/x-icon">
+</head>
+
+<body>
+    <body class="about-page">
+
+    <nav>
+        <div class="nav-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <button class="dropdown-button" onclick="toggleDropdownMenu()">☰</button>
+            <div class="dropdown-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+         
+    <div class="page-content">
+        <h1>About Us</h1>
+        <img src="LearnBright.png" alt="LearnBright Logo" class="header-image">
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+    <script>
+       function toggleDropdownMenu() {
+    var dropdownMenu = document.querySelector(".dropdown-menu");
+    if (dropdownMenu.style.display === "block" || getComputedStyle(dropdownMenu).display === "block") {
+        dropdownMenu.style.display = "none";
+    } else {
+        dropdownMenu.style.display = "block";
+        dropdownMenu.classList.add("show-menu");
+    }
+}
+     </script>
+</body>
+
+</html>
